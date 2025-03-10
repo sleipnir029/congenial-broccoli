@@ -2,11 +2,6 @@ attrs
 cachetools
 certifi
 charset-normalizer
-google-api-core
-google-api-python-client
-google-auth
-google-auth-httplib2
-googleapis-common-protos
 h11
 httplib2
 idna
@@ -21,7 +16,6 @@ protobuf
 pyasn1
 pyasn1_modules
 PyAutoGUI
-PyDrive
 PyGetWindow
 PyMsgBox
 pyobjc-core
