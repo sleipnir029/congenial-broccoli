@@ -14,20 +14,19 @@ Additionally, all necessary dependencies are listed in **`requirements.txt`**.
 
 ### 📖 Table of Contents
 - [congenial-broccoli](#congenial-broccoli)
-    - [📖 Table of Contents](#-table-of-contents)
   - [📌 Requirements](#-requirements)
     - [🔹 Python Packages](#-python-packages)
     - [🔹 External Tools](#-external-tools)
-    - [🛠 How the Script Works](#-how-the-script-works)
-    - [📂 CSV File Format](#-csv-file-format)
-    - [📺 Screen Capture Configuration](#-screen-capture-configuration)
-      - [🔹 macOS (`mac_record.py`)](#-macos-mac_recordpy)
-      - [🔹 Windows (win\_record.py)](#-windows-win_recordpy)
-      - [🔹 macOS](#-macos)
-      - [🔹 Windows](#-windows)
-    - [⚠️ Notes \& Troubleshooting](#️-notes--troubleshooting)
-    - [🎯 Summary](#-summary)
-    - [📌 Conclusion](#-conclusion)
+  - [🛠 How the Script Works](#-how-the-script-works)
+  - [📂 CSV File Format](#-csv-file-format)
+  - [📺 Screen Capture Configuration](#-screen-capture-configuration)
+    - [🔹 macOS (`mac_record.py`)](#-macos-mac_recordpy)
+    - [🔹 Windows (win\_record.py)](#-windows-win_recordpy)
+    - [🔹 macOS](#-macos)
+    - [🔹 Windows](#-windows)
+  - [⚠️ Notes \& Troubleshooting](#️-notes--troubleshooting)
+  - [🎯 Summary](#-summary)
+  - [📌 Conclusion](#-conclusion)
 
 ---
 
@@ -78,7 +77,7 @@ This command will list `available capture devices` for Windows.
 
 ---
 
-### 🛠 How the Script Works
+## 🛠 How the Script Works
 > CSV to Recording Workflow
 1. **CSV Input:** The script reads YouTube links from `videos.csv`.
 2. **Video Metadata Extraction:** Uses `yt-dlp` to get title and duration.
@@ -93,7 +92,7 @@ This command will list `available capture devices` for Windows.
 
 ---
 
-### 📂 CSV File Format
+## 📂 CSV File Format
 The script expects a **CSV file** (`videos.csv`) with one **YouTube URL** per line:
 
 ```bash
@@ -103,7 +102,7 @@ https://www.youtube.com/watch?v=example2
 
 ---
 
-### 📺 Screen Capture Configuration
+## 📺 Screen Capture Configuration
 The screen region to capture is customizable in both scripts:
 
 #### 🔹 macOS (`mac_record.py`)
@@ -143,7 +142,7 @@ python mac_record.py
 python win_record.py
 ```
 
-### ⚠️ Notes & Troubleshooting
+## ⚠️ Notes & Troubleshooting
 - Ensure ffmpeg is installed and configured properly.
 - Adjust the capture region (`region` dictionary) based on your screen setup.
 - On macOS, verify available screens using `ffmpeg -f avfoundation -list_devices true -i ""`.
@@ -151,7 +150,7 @@ python win_record.py
 - On Windows, `pyautogui` requires administrative permissions for simulating keypresses.
 
 
-### 🎯 Summary
+## 🎯 Summary
 |Feature	|macOS (mac_record.py)	|Windows (win_record.py)|
 |-----------|-----------------------|-----------------------|
 |YouTube Metadata Extraction	|✅ yt-dlp	|✅ yt-dlp|
@@ -164,7 +163,7 @@ python win_record.py
 
 ---
 
-### 📌 Conclusion
+## 📌 Conclusion
 This script automates YouTube video screen recording by fetching video metadata, setting up a recording session, and automatically closing the browser once the recording is complete. Users can modify the capture region and adjust ffmpeg settings for their specific use case.
 
 
